@@ -2,11 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$grey: #4e4e4e;
+
 
 .intro-header {
   .page-heading {
-    h1 {
-      color: rgb(43, 198, 152) !important;
+    h1.dark {
+      color: $grey;
+    }
+
+    hr.small.dark {
+      border-color: $grey;
+      border-width: 2px;
+    }
+
+    .subheading {
+      color: $grey;
     }
   }
 }
