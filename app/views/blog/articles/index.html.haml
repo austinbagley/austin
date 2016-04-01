@@ -1,7 +1,22 @@
+%header.intro-header{style: 'background-color: #E45043;'}
+  .container
+    .row
+      %div{class: 'col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1'}
+        .site-heading
+          .row
+            %div{class: 'col-md-7 col-md-offset-1'}
+              %h1.text-left Modern Marketing
+              %span{class: 'subheading text-left'} A how-to blog for the modern marketer.
+            %div{class: 'col-md-3 topspace20'}
+              = link_to image_tag("/assets/shift.png" ,:width => 160, :alt => "Promo Image", :class => "img-responsive center-block center-vert topspace20"), root_path
+
 - @articles.each do |article|
   %article
-    %h1= link_to article.title, blog_article_path(article)
-    = render partial: "meta", locals: { article: article }
-    = preserve_markdown article.excerpt
-    - if article.has_more_text?
-      %p= link_to "Continue reading →", blog_article_path(article)
+    .container
+      .row
+        %div{class: 'col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1'}
+          %h1= link_to article.title, blog_article_path(article)
+          = render partial: "meta", locals: { article: article }
+          = preserve_markdown article.excerpt
+          - if article.has_more_text?
+            %p= link_to "Continue reading →", blog_article_path(article)
