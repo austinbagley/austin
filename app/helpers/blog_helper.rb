@@ -15,8 +15,7 @@ module BlogHelper
       :autolink => true,
       :lax_html_blocks => true,
     }
-    markdown_to_html = Redcarpet::Markdown.new(coderayified, options)
-    markdown_to_html.render(text).html_safe
+    Redcarpet::Markdown.new(coderayified, options).render(text).html_safe
   end
 
   def preserve_markdown(text) # Used to get the indentation right in the <pre> code blocks with Haml

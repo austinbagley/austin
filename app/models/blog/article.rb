@@ -15,6 +15,10 @@ class Blog::Article
     content.split('<!--more-->').first
   end
 
+  def body
+    content.split('<!--more-->').last
+  end
+
   def has_more_text?
     content != excerpt
   end

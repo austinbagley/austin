@@ -1,6 +1,20 @@
+%header.intro-header{style: 'background-color: #E45043;'}
+  .container
+    .row
+      %div{class: 'col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1'}
+        .site-heading
+          .row
+            %div{class: 'col-md-12'}
+              %h1.text-left= @article.title
+              %span{class: 'subheading text-left'}
+                = render partial: "meta", locals: { article: @article }
+                = preserve_markdown @article.excerpt
+
+
 %article
-  %h1= @article.title
-  = render partial: "meta", locals: { article: @article }
-  = preserve_markdown @article.content
-  %hr
-  %p.action= link_to "← Back to Overview", blog_articles_path
+  .container
+    .row
+      %div{class: 'col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1'}
+        = preserve_markdown @article.body
+        %hr
+        %p.action= link_to "← Back to Overview", blog_articles_path

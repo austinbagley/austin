@@ -7,7 +7,7 @@
 With the complexity of today's marketing stack, modern marketers need to be full-stack integrators: combining deep-level brand management with the ability to deliver an integrated consumer acquisition & retention process across a layer of technologies.
 
  <!--more-->
-****
+
 A great [article on TechCrunch](http://techcrunch.com/2014/11/08/the-rise-and-fall-of-the-full-stack-developer/) by [Peter Yared](https://twitter.com/peteryared) a few years ago on the rise and fall of the full-stack developer mirrors the approach marketers should take: modern marketers should become a master integrators, not end-to-end experts.
 
 ##Full Stack Development becomes Full Stack Integration##
