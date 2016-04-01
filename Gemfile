@@ -23,6 +23,9 @@ gem 'pg'
 gem 'puma'
 gem 'sendgrid'
 gem 'simple_form'
+gem 'haml'
+gem 'redcarpet'
+gem 'coderay'
 group :development do
   gem 'better_errors'
   gem 'hub', :require=>nil
