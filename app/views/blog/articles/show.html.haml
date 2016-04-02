@@ -1,14 +1,15 @@
-%header.intro-header{style: 'background-color: #E45043;'}
+%header.intro-header
   .container
     .row
       %div{class: 'col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1'}
-        .site-heading
+        .page-heading
           .row
             %div{class: 'col-md-12'}
-              %h1.text-left= @article.title
-              %span{class: 'subheading text-left'}
-                = render partial: "meta", locals: { article: @article }
-                = preserve_markdown @article.excerpt
+              .post-header
+                %h1.text-left= @article.title
+                %span{class: 'subheading text-left'}
+                  = render partial: "meta", locals: { article: @article }
+                  = preserve_markdown @article.excerpt
 
 
 %article
