@@ -6,8 +6,24 @@
 // colors
 $grey: #4e4e4e;
 // $red: #E45043;
-$red: #cd4537;
+// $red: #cd4537;
+$red: #cb301b;
 $white: #ffffff;
+
+@media only screen and (max-width: 768px) {
+  .navbar-header {
+    background-color: $grey;
+
+    .navbar-brand {
+      padding: 9px;
+
+      img {
+        width: 36px;
+        padding: 0;
+      }
+    }
+  }
+}
 
 
 .intro-header {
