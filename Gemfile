@@ -26,6 +26,7 @@ gem 'simple_form'
 gem 'haml'
 gem 'redcarpet'
 gem 'coderay'
+gem 'sitemap_generator'
 group :development do
   gem 'better_errors'
   gem 'hub', :require=>nil
