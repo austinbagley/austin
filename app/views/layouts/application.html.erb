@@ -5,6 +5,8 @@
     <title><%= title %></title>
     <meta name="keywords" content="<%= meta_keywords %>" />
     <meta name="description" content="<%= meta_description %>" />
+    <link rel="canonical" href="<%= "#{APP_CONFIG["default_url"] + url_for(:page => params[:page]) }" %>" />
+
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true, :defer => "true"  %>
     <%= csrf_meta_tags %>
