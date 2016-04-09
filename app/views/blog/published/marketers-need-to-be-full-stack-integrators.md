@@ -1,5 +1,5 @@
 ---
-  title:  "Why modern marketers need to be full-stack integrators"
+  title:  "Marketers need to be full stack integrators"
   created_at: "2016-03-24"
   author: "Austin Bagley"
   tags: "Marketing Stack, Modern Marketers, Stackie Awards"
