@@ -3,6 +3,7 @@
   created_at: "2016-03-24"
   author: "Austin Bagley"
   tags: "Marketing Stack, Modern Marketers, Stackie Awards"
+  description: "Modern marketers need to be full-stack integrators, combining brand management and marketing technology"
 ---
 
 With the complexity of today's marketing stack, modern marketers need to be full-stack integrators: combining deep-level brand management with the ability to deliver an integrated consumer acquisition & retention process across a layer of technologies.
