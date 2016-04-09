@@ -1,6 +1,6 @@
 class Blog::Article
   include ActiveModel::Model
-  attr_accessor :title, :content, :created_at, :permalink, :author
+  attr_accessor :title, :content, :created_at, :permalink, :author, :tags
 
   # Used for ATOM-feed id
   def id
